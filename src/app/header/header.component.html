@@ -1,0 +1,15 @@
+<div>
+  <mat-toolbar color="accent">  
+    <mat-toolbar color="accent">
+      <span><a class="nav-link" [routerLink]="['/dashboard']" routerLinkActive="active">Home</a></span>
+      <span><a class="nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a></span>
+    </mat-toolbar>
+    
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="logout()">Logout</button>
+    </mat-menu>
+  </mat-toolbar>
+</div>

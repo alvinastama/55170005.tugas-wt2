@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="login-card">
+    <mat-card>
+      <p>Pokemon Generation 1 List</p>
+      <br />
+      <h1>Welcome</h1>
+      <br />
+      <mat-card-header>
+        <mat-card-title>Login</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+            <tr>
+              <td>
+                <mat-icon>account_box</mat-icon>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Username" [(ngModel)]="username" name="username" required> <!--misalnya username: admin-->
+                </mat-form-field>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <mat-icon>vpn_key</mat-icon>
+                <mat-form-field class="example-full-width">
+                  <input matInput placeholder="Password" [(ngModel)]="password"type="password" name="password" required> <!--misalnya password: admin-->
+                </mat-form-field>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button (click)="login()" color="primary">Login</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+
